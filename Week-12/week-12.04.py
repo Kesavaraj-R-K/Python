@@ -40,6 +40,9 @@ Input                    	Result
 5 10
 5 10	                          50
 Answer:(penalty regime: 0 %)
+
+
+        
 class ShoeInventory:
     def __init__(self, shoe_sizes):
         self.inventory = {size: 0 for size in shoe_sizes}
