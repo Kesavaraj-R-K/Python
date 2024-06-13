@@ -1,21 +1,47 @@
-Leap Year
-Most years have 365 days. However, the time required for the Earth to orbit the Sun is actually slightly more than that. As a result, an extra day, February 29, is included in some years to correct for this difference. Such years are referred to as leap years. The rules for determining whether or not a year is a leap year follow:
-• Any year that is divisible by 400 is a leap year.
-• Of the remaining years, any year that is divisible by 100 is not a leap year.
-• Of the remaining years, any year that is divisible by 4 is a leap year.
-• All other years are not leap years.
-Write a program that reads a year from the user and displays a message indicating whether or not it is a leap year.
-Sample Input 1
-1900
-Sample Output 1
-1900 is not a leap year.
-Sample Input 2
-2000
-Sample Output 2
-2000 is a leap year.
+Month name to days
+The length of a month varies from 28 to 31 days. In this exercise you will create a program that reads the name of a month from the user as a string. Then your program should display the number of days in that month. Display “28 or 29 days” for February so that leap years are addressed.
 
-year=int(input())
-if(year%400==0):
-    print(year,"is a leap year.")
-else:
-    print(year,"is not a leap year.")
+
+Sample Input 1
+February
+Sample Output 1
+February has 28 or 29 days in it.
+Sample Input 2
+March
+Sample Output 2
+March has 31 days in it.
+Sample Input 3
+April
+Sample Output 3
+April has 30 days in it.
+For example:
+Input	Result
+February	February has 28 or 29 days in it.
+March	March has 31 days in it.
+
+
+m=input()
+if(m=="January"):
+    print(m,"has 31 days in it.")
+elif(m=="February"):
+    print(m,"has 28 or 29 days in it.")
+elif(m=="March"):
+    print(m,"has 31 days in it.")
+elif(m=="April"):
+    print(m,"has 30 days in it.")
+elif(m=="May"):
+    print(m,"has 31 days in it.")
+elif(m=="June"):
+    print(m,"has 30 days in it.")
+elif(m=="July"):
+    print(m,"has 31 days in it.")
+elif(m=="August"):
+    print(m,"has 31 days in it.")
+elif(m=="September"):
+    print(m,"has 30 days in it.")
+elif(m=="October"):
+    print(m,"has 31 days in it.")
+elif(m=="November"):
+    print(m,"has 30 days in it.")
+elif(m=="December"):
+    print(m,"has 31 days in it.")
